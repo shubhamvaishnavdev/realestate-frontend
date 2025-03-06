@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-outfit">{children}</body>
+      <body className={`${outfit.variable} font-outfit`}>{children}</body>
     </html>
   );
 }

@@ -32,14 +32,15 @@ const Header = () => {
             >
               <CommonButton
                 bgColor="bg-(--color-5)"
-                children="Sign in"
                 textColor="text-white"
                 border={false}
                 withIcon={false}
                 onClick={() => ""}
                 paddingHorizontal="px-4"
                 paddingVertical="py-2"
-              />
+              >
+                Sign in
+              </CommonButton>
             </Link>
           </li>
           <li className="py-[2px] px-1 font-[400] leading-6">ENG</li>

@@ -60,14 +60,13 @@ const MobileHeader = () => {
                   >
                     <CommonButton
                       bgColor="bg-(--color-5)"
-                      children="Sign in"
                       textColor="text-white"
                       border={false}
                       withIcon={false}
                       onClick={closeMenu}
                       paddingHorizontal="px-4"
                       paddingVertical="py-2"
-                    />
+                    >Sign in</CommonButton>
                   </Link>
                 </li>
                 <li

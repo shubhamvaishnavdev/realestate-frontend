@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Select from "../common/select";
 import SearchBox from "./searchBox";
 import usePropertyStore from "@/lib/store/propertyStore";
