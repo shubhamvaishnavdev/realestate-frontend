@@ -7,10 +7,10 @@ This is the frontend for the Real Estate application built with Next.js.
 Follow these steps to set up and run the project locally:
 
 ### 1️⃣ Clone the Repository
-
+```bash
 git clone <repository-url>
 cd <repository-folder>
-
+```
 ### 2️⃣ Add Environment Variables
 
 Create a .env file in the root directory and add the necessary environment variables.
@@ -20,9 +20,9 @@ Create a .env file in the root directory and add the necessary environment varia
 npm install
 ```
 ### 4️⃣ Run in Development Mode
-
+```bash
 npm run dev
-
+```
 This will start the development server at http://localhost:3000/.
 
 ### 5️⃣ Build and Run for Production
