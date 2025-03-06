@@ -1,4 +1,4 @@
-import { PropertyListingApi } from "@/config/apiRoutes";
+import { propertyListingApi } from "@/config/apiRoutes";
 import { PropertyResponse } from "@/types/property";
 import axios from "axios";
 import { create } from "zustand";
@@ -17,7 +17,7 @@ interface PropertyState {
   properties: PropertyResponse; // Replace with actual property type
 
   // Actions
-  setSearchQuery: (lat: number| undefined, lon: number | undefined) => void;
+  setSearchQuery: (lat: number | undefined, lon: number | undefined) => void;
   setFilters: (filters: Partial<PropertyState["filters"]>) => void;
   setPagination: (pagination: PropertyState["pagination"]) => void;
   fetchProperties: () => Promise<void>;
@@ -80,7 +80,7 @@ const usePropertyStore = create<PropertyState>((set, get) => ({
 
     try {
       const res = await axios.get(
-        `${PropertyListingApi}?${queryParams.toString()}`
+        `${propertyListingApi}?${queryParams.toString()}`
       );
       const data = res.data;
 

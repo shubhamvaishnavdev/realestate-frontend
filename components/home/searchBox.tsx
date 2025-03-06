@@ -1,4 +1,5 @@
 "use client";
+import { locationSerchApi } from "@/config/apiRoutes";
 import usePropertyStore from "@/lib/store/propertyStore";
 import axios from "axios";
 import Image from "next/image";
@@ -24,7 +25,7 @@ const SearchBox: React.FC = () => {
     const delayDebounceFn = setTimeout(async () => {
       try {
         const response = await axios.get(
-          `https://nominatim.openstreetmap.org/search?format=json&q=${query}`
+          `${locationSerchApi}?format=json&q=${query}`
         );
         setResults(response?.data);
       } catch (error) {
