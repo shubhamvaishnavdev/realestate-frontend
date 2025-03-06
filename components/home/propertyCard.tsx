@@ -33,7 +33,7 @@ interface PropertyCardProps {
 const PropertyCard: React.FC<PropertyCardProps> = ({ propertyData }) => {
   return (
     <div className="w-[22.5em] h-[26.75em]">
-      <div className="relative h-[15em] w-[22.5em] bg-green-400 rounded-t-lg">
+      <div className="relative h-[15em] w-[22.5em] rounded-t-lg">
         <Image
           src={propertyData?.property_images[0]}
           alt={propertyData?.property_name || "Property Image"}
